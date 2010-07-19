@@ -53,7 +53,8 @@ opts = GetoptLong.new(
 [ '--list', '-l', GetoptLong::NO_ARGUMENT ],
 [ '--artist', '-a', GetoptLong::REQUIRED_ARGUMENT ],
 [ '--album', '-A', GetoptLong::REQUIRED_ARGUMENT ],
-[ '--song', '-t', GetoptLong::REQUIRED_ARGUMENT ],
+[ '--title', '-t', GetoptLong::REQUIRED_ARGUMENT ],
+[ '--song', '-s', GetoptLong::REQUIRED_ARGUMENT ],	# same as -t
 [ '--comment', '-c', GetoptLong::REQUIRED_ARGUMENT ],
 [ '--genre', '-g', GetoptLong::REQUIRED_ARGUMENT ],
 [ '--year', '-y', GetoptLong::REQUIRED_ARGUMENT ],
@@ -72,6 +73,8 @@ opts.each do |opt, arg|
 			artist = arg
 		when '--album'
 			album = arg
+		when '--title'
+			title = arg
 		when '--song'
 			title = arg
 		when '--comment'
