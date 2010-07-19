@@ -1,0 +1,45 @@
+oggtag: shows and changes tags in files supported by libtag
+
+consider it alpha, changes in read only files are silently ignored
+
+== Usage
+
+oggtag [OPTION...] FILES...
+
+Options:
+
+-h, --help:
+   Display help and exit
+
+-l, --list:
+   Lists the tag(s) on the file(s)
+
+-a, --artist ARTIST:
+   Set the artist information
+
+-A, --album ALBUM:
+   Set the album title information
+
+-s, -t, --tile, --song SONG:
+   Set the song title information
+
+-c, --comment COMMENT:
+   Set the comment information
+
+-g, --genre GENRE:
+   Set the genre
+
+-y, --year num:
+   Set the year
+
+-T, --track num:
+   Set the track number
+
+FILES: List of files to be changed.
+
+requires taglib (libtag1-ruby in debian)
+(the file is /usr/lib/ruby/1.8/taglib.rb)
+(file:///usr/share/doc/libtag1-doc/html/index.html)
+
+Author: Martin Hradil <himdel seznam cz>
+Licence: GNU GPLv2 or later
